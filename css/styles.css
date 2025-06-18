@@ -8,6 +8,11 @@
 
 :root {--color-rojo: rgb(175, 38, 25);
        --color-azulMarino: rgb(20, 61, 107);
+       --color-azul: rgb(92, 123, 158);
+       --gris-claro: rgb(243, 240, 240);
+
+
+       
        }
 
 .roboto { /* Tipografía de fonts.google.com */
@@ -27,7 +32,7 @@ nav ul.menu {
     list-style: none;
     padding: 0 15px 17px 0;
     /*margin: 30px 10px 15px 0;*/
-    gap: 20px; /* espaciado entre ítems */
+    gap: 50px; /* espaciado entre ítems */
   
 }
 
@@ -60,8 +65,9 @@ header {
 
 header .logo {padding: 30px 0 15px 15px;}
 
-.espacio {background-color: var(--color-rojo); 
-          height: 10px;} /* barra debajo del header */
+.espacio {background-color: var(--color-rojo); /* barra debajo del header */
+          height: 10px;
+        }
 
 
 /* Main */
@@ -76,8 +82,9 @@ h1 {text-align: center;
     padding: 60px 0 30px 0;
 }
 
+.espacioHeader {padding-bottom: 70px; padding-top: 100px;}
+
 .texto-principal {
-        /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
         font-size: 18px;
         color: var(--color-rojo);
         max-width: 60%;
@@ -86,15 +93,6 @@ h1 {text-align: center;
         padding: 0 0 60px 0;
         line-height: 1.6; /* espacio entre líneas*/
     }
-
-/*.contenedor .foto {width: 45%;
-              /*height: 200px;*/
-              /*padding: 10px 10px 10px 10px;}*/
-
-
-/*.contenedor {display:flex;
-            background-color:rgb(20, 61, 107);
-            width: 100%;}*/
 
 .contenedor {
   display: flex;               
@@ -105,7 +103,6 @@ h1 {text-align: center;
   justify-content: space-between;
   /*text-align: center;*/
 }
-
 
 .contenedor .foto {
   max-width: 50%;
@@ -119,7 +116,7 @@ h1 {text-align: center;
         text-align: center;
         line-height: 1.6;
         width: 40%;
-        margin: 0 auto;
+        margin: 0 auto 35px;
         }
 
 .iModificado {
@@ -128,6 +125,44 @@ h1 {text-align: center;
 }
 
 .contenedor2 {text-align: center; margin: 70px 0 70px 0;}
+
+.contenedorRef {display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                /*gap: 1px;*/
+                padding-bottom: 50px;
+                font-size: 15px;}
+
+.listaRef {border: 2px solid rgb(210, 209, 209);
+           background-color: var(--gris-claro);
+           /*background-color: rgb(235, 232, 232);*/
+           color: var(--color-azulMarino);
+           width: 250px;
+           margin: 10px 20px 10px 20px;
+           padding: 35px;
+           line-height: 1.8; /* espacio entre líneas*/          
+}
+
+.listaCont {border: 2px solid rgb(210, 209, 209);
+           background-color: var(--gris-claro);
+           color: var(--color-azulMarino);
+           width: 400px;
+           margin: 10px 20px 10px 20px;
+           padding: 35px;
+           line-height: 1.8; /* espacio entre líneas*/          
+}
+
+.listaCont ul {list-style:none;}
+
+.listaRef ul {list-style:circle;}
+
+.sangrado {
+  margin-left: 20px; /* o padding-left: 20px */
+}
+
+.margenAbajo {margin-bottom: 15px;}
+
+.iframe {text-align: center;}
 
 /* Footer */
 
@@ -141,28 +176,34 @@ footer {font-family: Verdana, Geneva, Tahoma, sans-serif;
         line-height: 1.7; /* espacio entre líneas*/
         display: flex;
         justify-content: center;  /* centra horizontalmente */
-        gap: 10px;
+        gap: 40px;
 }
 
-.info {width:30%; text-align: left;}
+.info {width:200px ;text-align: left;}
 
-.info p:first-of-type {
-    margin-bottom: 10px; /* Espacio entre título y contenido */
+.info p:first-of-type { /* Espacio entre título y contenido */
+    margin-bottom: 10px; 
 }
 
 .info ul li a { /* enlaces del footer */
     text-decoration: none;
-    color: white;  
+    color: white;
+    transition: transform 0.2s ease;
+      
 }
 
-.info li:hover { transform: translateX(2px);} /* movimiento a la derecha */
+/*.info a {transition: transform 0.2s ease, filter 0.2s ease;}*/
+
+.info li:hover { transform: translateX(3px); /* movimiento a la derecha */
+                /*filter: brightness(0.8);*/
+} 
+
 
 .footer2 {background-color: var(--color-azulMarino);
           color: white;
         font-size: 13px;
         padding: 20px 0 20px 0;
         text-align: center;
-    
     }
 
 ul {
