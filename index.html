@@ -8,39 +8,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="./js/app.js"></script>
 </head>
 <body>
-    <header><!--Header-->
+    <header>
         <div class="logo">
             <a href="index.html">
-                <img src="./assets/img/balcazar.png" alt="Rectificaciones_Balcazar">
+            <img src="./assets/img/balcazar.png" alt="Rectificaciones Balcázar">
             </a>
-        </div>   
-        <nav>
+        </div>
+        <div class="hamburguesa" id="hamburguesa">&#9776;</div><!--Menú hamburguesa-->
+        <nav aria-label="Menu principal"><!--Menú principal-->
             <ul class="nav menu roboto">
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="pages/refacciones.html">REFACCIONES</a></li>
-                <li><a href="#">RECTIFICACIONES</a></li>
-                <li><a href="pages/contacto.html">CONTACTO</a></li>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="pages/refacciones.html">REFACCIONES</a></li>
+            <li><a href="pages/rectificaciones.html">RECTIFICACIONES</a></li>
+            <li><a href="pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
+        <nav id="menu" aria-label="Menu movil"><!--Menú móvil-->
+            <a href="index.html">Inicio</a>
+            <a href="pages/refacciones.html">Refacciones</a>
+            <a href="pages/rectificaciones.html">Rectificaciones</a>
+            <a href="pages/contacto.html">Contacto</a>
+        </nav>
+        <div id="overlay"></div>
     </header>
     <div class="espacio"></div>
     <main> <!-- Main -->
         <img src="./assets/img/foto-index2.jpg">
         <h1>Somos los expertos en la rectificación de motores</h1>
         <p class="texto-principal">En Rectificaciones Balcázar somos una empresa dedicada a la venta de refacciones 
-        y rectificación de motores de todas las marcas. Contamos con 50 años de experiencia 
-        en Coatzacoalcos, Veracruz.</p>
+        y rectificación de motores de todas las marcas. Con más de 50 años de experiencia, Rectificaciones Balcázar 
+        es un negocio familiar comprometido con la excelencia en Coatzacoalcos, Veracruz. Desde 1975, generaciones 
+        de la familia Balcázar han mantenido viva la tradición de ofrecer trabajos de alta precisión y un servicio 
+        cercano, basados en la confianza y la satisfacción total de nuestros clientes.</p>
         <div class="espacio"></div>
         <section class="contenedor">
-                <img class="foto" src="./assets/img/fachada.jpg" alt="Rectificaciones_Balcazar">
-                <p class="texto"><b>Ven a Rectificaciones Balcázar</b><br><br>Contamos con un amplio inventario de refacciones de marcas de prestigio. Tenemos 
-                los mejores precios de la región, equipo y maquinaria especializada para la rectificación de motores 
-                de todas las marcas.<br><br>
-                Damos garantía en nuestros servicios, gracias a los productos, equipo y personal capacitado con el 
-                que contamos. Todos nuestros clientes cuentan con la certeza de que recibirán una atención profesional 
-                e integral. ¡Contáctanos!</p>  
+                <img class="foto" src="./assets/img/portada1.jpg" alt="Rectificaciones_Balcazar">
+                <p class="texto"><b>Ven a Rectificaciones Balcázar</b><br><br>Contamos con un amplio inventario de 
+                refacciones de marcas de prestigio. Tenemos los mejores precios de la región, equipo y maquinaria 
+                especializada para la rectificación de motores de todas las marcas. Damos garantía en nuestros servicios, 
+                gracias a los productos, equipo y personal capacitado con el que contamos. Trato directo con los dueños 
+                y técnicos expertos. Todos nuestros clientes cuentan con la certeza de que recibirán una atención 
+                profesional e integral. ¡Contáctanos!</p>  
         </section>
         <section class="contenedor2">
             <i class="fa-solid fa-wrench fa-2x iModificado"></i>
@@ -59,16 +70,16 @@
                    
             </div>
             <div class="info">
-                <p><b>Mapa de Sitio</b></p>
+                <p class="bold">Mapa de Sitio</b>
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="pages/refacciones.html">Refacciones</a></li>
-                        <li><a href="#">Rectificaciones</a></li>
+                        <li><a href="pages/rectificaciones.html">Rectificaciones</a></li>
                         <li><a href="pages/contacto.html">Contacto</a></li>
                     </ul>
             </div>
             <div class="info">
-                <p><b>Enlaces de interés</b></p>
+                <p class="bold">Enlaces de interés</p>
                 <ul>
                     <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
                     <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
@@ -77,7 +88,7 @@
             </div>
         </section>
         <section class="footer2">
-            <p>&copy; Todos los derechos reservados. Rectificaciones Balcázar</p>
+            <p>&copy; 2025 Rectificaciones Balcázar. Todos los derechos reservados.</p>
         </section>
     </footer>
 </body>

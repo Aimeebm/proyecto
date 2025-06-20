@@ -10,6 +10,8 @@
        --color-azulMarino: rgb(20, 61, 107);
        --color-azul: rgb(92, 123, 158);
        --gris-claro: rgb(243, 240, 240);
+       --gris: rgb(210, 209, 209);
+       --blanco: white;
 }
 
 .roboto { /* Tipografía de fonts.google.com */
@@ -28,7 +30,7 @@ nav ul.menu {
     flex-wrap: wrap; 
     align-items: center;
     list-style: none;
-    padding: 0 15px 17px 0;
+    padding: 0 30px 17px 0;
     /*margin: 30px 10px 15px 0;*/
     gap: 50px; /* espaciado entre ítems */
 }
@@ -66,7 +68,7 @@ header .logo {padding: 30px 0 15px 15px;}
 
 main {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-main img {width: 100%;}
+main img {width: 100%}
 
 h1 {text-align: center; 
     color: var(--color-rojo); 
@@ -74,8 +76,11 @@ h1 {text-align: center;
     padding: 60px 0 30px 0;
 }
 
-.espacioHeader {padding-bottom: 70px; 
-                padding-top: 100px;}
+.espacioHeader {padding-bottom: 55px; 
+                padding-top: 80px;}
+
+.espacioHeader2 {padding-bottom:50px; 
+                 padding-top: 10px;}
 
 .texto-principal {
         font-size: 18px;
@@ -122,11 +127,12 @@ h1 {text-align: center;
                 flex-wrap: wrap;
                 justify-content: center;
                 /*gap: 1px;*/
-                padding-bottom: 50px;
+                /*padding-bottom: 50px;*/
                 font-size: 15px;}
 
-.listaRef {border: 2px solid rgb(210, 209, 209);
+.listaRef {border: 2px solid var(--gris);
            background-color: var(--gris-claro);
+           border-radius: 7px;
            /*background-color: rgb(235, 232, 232);*/
            color: var(--color-azulMarino);
            width: 250px;
@@ -135,8 +141,11 @@ h1 {text-align: center;
            line-height: 1.8; /* espacio entre líneas*/          
 }
 
+.listaRef2 {width:500px;}
+
 .listaCont {border: 2px solid rgb(210, 209, 209);
            background-color: var(--gris-claro);
+           border-radius: 5px;
            color: var(--color-azulMarino);
            width: 400px;
            margin: 10px 20px 10px 20px;
@@ -154,11 +163,64 @@ h1 {text-align: center;
 
 .margenAbajo {margin-bottom: 15px;}
 
-.iframe { text-align: center; 
-          background-color: var(--color-azulMarino); 
-          width: 700px; 
-          margin: 50px auto; 
-          padding: 40px;}
+.mapa {
+  max-width: 840px;
+  height: 300px;
+  margin: 25px auto 60px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* opcional: sombra elegante */
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: solid 2px var(--color-azulMarino);
+  border-radius: 5px;
+}
+
+
+/* Formulario de Contacto */
+
+form {max-width: 50%;
+      margin: auto;
+      margin-bottom: 90px; 
+      padding:30px;
+      border: solid var(--color-rojo) 2px;
+      background-color: rgb(252, 249, 249);
+      border-radius: 5px;
+}
+
+/*input {margin-bottom: 15px; width: 400px;}*/
+
+input, textarea {
+  /*display: block;*/
+  margin-bottom: 15px;
+  margin-top: 10px;
+  /*width: 100%; ocupa todo el ancho disponible */
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+[type="submit"]{display: block;
+                margin: 30px auto 0;
+                border-radius: 5px;
+                width:80px;
+                padding: 8px;
+                cursor: pointer;
+                background-color: var(--color-azulMarino);
+                color: var(--blanco);
+                transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {opacity: 0.8; /* un poco más transparente */
+                            transform: scale(1.05);}
+
+textarea { height:100px;
+           resize: none;
+}
+
 
 /* Footer */
 
@@ -168,25 +230,27 @@ footer {font-family: Verdana, Geneva, Tahoma, sans-serif;
 .footer1 {background-color: var(--color-rojo);
         color: white;
         font-size: 13px;
-        padding: 60px 40px 60px 130px;
+        padding: 40px 40px 40px 130px;
         line-height: 1.7; /* espacio entre líneas*/
         display: flex;
         justify-content: center;  /* centra horizontalmente */
         gap: 40px;
 }
 
-.info {width:200px ;text-align: left;}
+.bold {font-weight:bolder;}
+
+.info {width:200px;}
 
 .info p:first-of-type { /* Espacio entre título y contenido */
     margin-bottom: 10px; 
 }
 
 .info ul li a { /* enlaces del footer */
-    text-decoration: none;
-    color: white;
-    transition: transform 0.2s ease;
-      
+                text-decoration: none;
+                color: white;     
 }
+
+.info li { transition: transform 0.2s ease;} 
 
 .info li:hover { transform: translateX(3px); /* movimiento a la derecha */
                 /*filter: brightness(0.8);*/
@@ -194,9 +258,9 @@ footer {font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 .footer2 {background-color: var(--color-azulMarino);
           color: white;
-        font-size: 13px;
-        padding: 20px 0 20px 0;
-        text-align: center;
+          font-size: 12px;
+          padding: 20px 0 20px 0;
+          text-align: center;
 }
 
 ul {
@@ -205,58 +269,112 @@ ul {
     margin: 0;
 }
 
-
 /* CSS media queries */
 
-@media (max-width:1015px){
-        nav ul.menu li a {font-size: 17px;}
-        nav ul.menu {gap: 15px;}
-    }
 
-@media (max-width:920px){
-        nav ul.menu li a {font-size: 16px;}
-        nav ul.menu {gap: 10px;}
+@media (max-width:895px){
+        .mapa {max-width: 80%; margin-top: 40px;}
+        form {max-width: 80%;}  
     }
 
 @media (max-width:845px){
-        header .logo {padding: 20px 0 15px 15px;}
-        header {display: block;}
-        .texto {font-size: 13px; line-height: 1.4;}
-        nav ul.menu {padding-left: 8px;}
+        .texto {font-size: 13px; 
+                line-height: 1.4;}   
     }
 
-@media (max-width:690px){
+@media (max-width:770px){ 
+        .footer1 { gap: 0; 
+                   padding: 10px 0 30px 0; 
+                   justify-content: center; 
+                   display: flex; 
+                   flex-wrap: wrap; 
+                   /*align-items: center;*/}
+        .info { width:80%; 
+                text-align: center;
+        }
+
+        .info p:first-of-type {
+                    margin-bottom: 10px; /* Espacio entre título y contenido */
+                    margin-top: 25px;
+        }
+}
+
+@media (max-width:690px){ /* la imagen pequeña ocupa todo el ancho */
         .formulario {max-width:400px; margin: auto;}
         .contenedor {display:block;}
         .contenedor .foto {max-width: 100%;}
-        .texto {width: 90%; padding-top: 20px;}
-        nav ul.menu li a {font-size: 14px;}
-        nav ul.menu {gap: 8px; padding-left: 10px;}
+        .texto {width: 90%; padding-top: 40px;}
     }
 
-@media (max-width:460px){
-    nav ul.menu li a {font-size: 13px;}
-    nav ul.menu {gap: 5px; padding-left:5px;}
+/* Menú hamburguesa */
 
+/* Botón hamburguesa */
+
+.hamburguesa {
+    font-size: 70px; /* tamaño del menú */
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+    color: var(--color-azulMarino);
 }
 
-@media (max-width: 768px) {
-    .footer1 {
+/* Menú móvil oculto por defecto */
+
+#menu {
+        position: fixed;
+        top: 120px; /* separa del top para que no tape el logo */
+        right: -300px;
+        width: 220px;
+        background-color: rgba(255, 255, 255, 0.95);
+        transition: right 0.3s ease;
+        z-index: 1000;
+        display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .info {
-        width: 80%;
-    }
-
-    .info p:first-of-type {
-        margin-bottom: 10px; /* Espacio entre título y contenido */
-        margin-top: 25px;
-    }
+        padding: 15px;
+        gap: 10px;
+        height: auto; /* solo lo que ocupen los elementos */
 }
 
-  
+#menu a {
+    text-decoration: none;
+    color: var(--color-rojo);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#menu.activo {
+            right: 10px; /* visible a la derecha */
+}
+
+/* Overlay (fondo oscuro) */
+
+#overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+        z-index: 900;
+}
+
+#overlay.activo {
+    opacity: 1;
+    visibility: visible;
+}
 
 
+/* Responsive */
 
+@media (max-width: 960px) {
+    nav[aria-label="Menu principal"] {
+    display: none;
+    }
+
+    .hamburguesa {
+    display: block;
+    }
+}

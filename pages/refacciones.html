@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="../js/app.js"></script>
 </head>
 <body>
     <header>
@@ -15,28 +16,35 @@
             <a href="../index.html">
                 <img src="../assets/img/balcazar.png" alt="Rectificaciones_Balcazar">
             </a>
-        </div>   
-        <nav>
-            <ul class="nav menu roboto">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="refacciones.html">REFACCIONES</a></li>
-                <li><a href="#">RECTIFICACIONES</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
+        </div>
+        <div class="hamburguesa" id="hamburguesa">&#9776;</div> <!-- Menú Hamburguesa -->
+        <nav aria-label="Menu principal">
+            <ul class="nav menu roboto"> <!-- Menú principal -->
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="refacciones.html">REFACCIONES</a></li>
+            <li><a href="rectificaciones.html">RECTIFICACIONES</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
+        <nav id="menu" aria-label="Menu movil"> <!-- Menú móvil -->
+            <a href="../index.html">Inicio</a>
+            <a href="refacciones.html">Refacciones</a>
+            <a href="rectificaciones.html">Rectificaciones</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div id="overlay"></div>
     </header>
     <div class="espacio"></div>
-    <main>
+    <main> <!-- Main -->
         
         <h1 class="espacioHeader">Venta de Refacciones para Motores</h1>
-        
-        
         <section class="contenedor">
-                <p class="texto"><b>Refaccionaria</b><br><br>¡Solicita refacciones para tu motor! Trabajamos con especialistas en camisas, pistones, 
-                    anillos para pistón, válvulas, juego de juntas y metales. Además, contamos con motores a gasolina y 
-                    diésel. Nos respaldan varios años de experiencia.</p>
-                <img class="foto" src="../assets/img/prueba2.jpg" alt="Rectificaciones_Balcazar">
-                  
+                <p class="texto"><b>Refaccionaria</b><br><br>Amplio inventario de repuestos originales y de alta calidad 
+                para motores de automóviles, camiones y maquinaria pesada. Asesoría personalizada para encontrar la pieza 
+                exacta que tu motor necesita. Además tenemos repuestos a medida: talles, rodamientos y sellos de distintas 
+                marcas reconocidas. Envíos locales e internacionales, con opciones urgentes para mantener tu operación en 
+                marcha.</p>
+                <img class="foto" src="../assets/img/refaccionaria.jpg" alt="Rectificaciones_Balcazar">        
         </section>
         <div class="espacio"></div> 
 
@@ -90,23 +98,12 @@
             </section>  
         </div>
 
-
-
-
-
-
-
         <section class="contenedor2"> <!-- Iconos -->
             <i class="fa-solid fa-wrench fa-2x iModificado"></i>
             <i class="fa-solid fa-gear fa-2x iModificado"></i>
             <i class="fa-solid fa-screwdriver fa-2x iModificado"></i>
         </section>
 
-
-
-
-
-  
     </main>
     <footer> <!-- Footer-->
         <section class="footer1">
@@ -123,7 +120,7 @@
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="refacciones.html">Refacciones</a></li>
-                        <li><a href="#">Rectificaciones</a></li>
+                        <li><a href="rectificaciones.html">Rectificaciones</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
             </div>
@@ -137,7 +134,7 @@
             </div>
         </section>
         <section class="footer2">
-            <p>&copy; Todos los derechos reservados. Rectificaciones Balcázar</p>
+            <p>&copy; 2025 Rectificaciones Balcázar. Todos los derechos reservados.</p>
         </section>
     </footer>
 </body>
