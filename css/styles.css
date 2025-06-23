@@ -222,7 +222,7 @@ textarea { height:100px;
           padding: 25px 0 20px 0;
 }
 
-.estiloTel {color: var(--color-azulMarino);
+/*.estiloTel {color: var(--color-azulMarino);
             text-decoration: none;} /* para los teléfonos */
 
 
@@ -259,7 +259,7 @@ footer {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 }
 
-.estiloT {color: white; text-decoration: none;} /* para los teléfonos */
+/*.estiloT {color: white; text-decoration: none;} /* para los teléfonos */
 
 .footer2 {background-color: var(--color-azulMarino);
           color: white;
