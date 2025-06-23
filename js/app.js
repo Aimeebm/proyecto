@@ -1,7 +1,7 @@
 
-// Código para el menú hamburguesa
+    // Código para el menú hamburguesa
 
-document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     const boton = document.getElementById('hamburguesa');
     const menu = document.getElementById('menu');
     const overlay = document.getElementById('overlay');
@@ -25,3 +25,29 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  
+
+    // Slider
+
+    window.onload = function () {
+    const imagenes = [
+      "assets/img/foto1.jpg",
+      "assets/img/foto2.jpg",
+    ];
+    let indice = 0;
+    const img = document.getElementById("slide");
+
+    function cambiarImagen() {
+      img.style.opacity = 0;
+
+      setTimeout(() => {
+        indice = (indice + 1) % imagenes.length;
+        img.src = imagenes[indice];
+        img.style.opacity = 1;
+      }, 1500); // tiempo igual al de la transición
+    }
+
+    setTimeout(cambiarImagen, 2000); // primer cambio más pronto
+    setInterval(cambiarImagen, 8000); // siguientes cada 8s
+  };
