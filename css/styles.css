@@ -321,7 +321,7 @@ ul {
                margin-top: 40px;
         }
         form {max-width: 80%;}
-        h1 {font-size: 1.30rem;}
+        h1 {font-size: 1.30rem; padding: 50px 0 25px 0;}
         .espacioHeader {padding: 55px 0 40px 0}
         
     }

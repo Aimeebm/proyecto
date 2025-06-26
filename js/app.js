@@ -29,26 +29,6 @@
   
 
     // Slider
-  
-    // Después moveré este código al index porque ahí está el slider
-    // y aparece un error en las otras páginas.
 
-  
-  const imagenes = ["assets/img/foto1.jpg", "assets/img/foto2.jpg",];
-  let indice = 0;
-  const img = document.getElementById("slide");
-  if (!img) {
-    console.error("No se encontró la imagen con id='slide'");
-  } else {
-    function cambiarImagen() {
-      img.style.opacity = 0;
-      setTimeout(() => {
-        indice = (indice + 1) % imagenes.length;
-        img.src = imagenes[indice];
-        img.style.opacity = 1;
-      }, 1500);
-    }
+    // Moví el código del slider al index.
 
-    setTimeout(cambiarImagen, 2000);
-    setInterval(cambiarImagen, 8000);
-  }
