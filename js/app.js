@@ -29,25 +29,25 @@
   
 
     // Slider
+  
+    // Después moveré este código al index porque ahí está el slider.
 
-    window.onload = function () {
-    const imagenes = [
-      "assets/img/foto1.jpg",
-      "assets/img/foto2.jpg",
-    ];
-    let indice = 0;
-    const img = document.getElementById("slide");
-
+  
+  const imagenes = ["assets/img/foto1.jpg", "assets/img/foto2.jpg",];
+  let indice = 0;
+  const img = document.getElementById("slide");
+  if (!img) {
+    console.error("No se encontró la imagen con id='slide'");
+  } else {
     function cambiarImagen() {
       img.style.opacity = 0;
-
       setTimeout(() => {
         indice = (indice + 1) % imagenes.length;
         img.src = imagenes[indice];
         img.style.opacity = 1;
-      }, 1500); // tiempo igual al de la transición
+      }, 1500);
     }
 
-    setTimeout(cambiarImagen, 2000); // primer cambio más pronto
-    setInterval(cambiarImagen, 8000); // siguientes cada 8s
-  };
+    setTimeout(cambiarImagen, 2000);
+    setInterval(cambiarImagen, 8000);
+  }

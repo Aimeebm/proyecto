@@ -76,15 +76,9 @@ h1 {
     padding: 60px 0 30px 0;
 }
 
-.espacioHeader {
-          padding-bottom: 55px; 
-          padding-top: 80px;
-}
+.espacioHeader {padding: 80px 0 55px 0;}
 
-.espacioHeader2 {
-      padding-bottom:50px; 
-      padding-top: 10px;
-}
+.espacioHeader2 {padding: 10px 0 50px 0;}
 
 .texto-principal {
         font-size: 1.12rem;
@@ -200,7 +194,6 @@ h1 {
 form {
     max-width: 50%;
     margin: 0 auto 90px;
-    /*margin-bottom: 90px;*/ 
     padding:30px;
     border: solid var(--color-rojo) 2px;
     background-color: rgb(252, 249, 249);
@@ -300,6 +293,9 @@ ul {
     margin: 0;
 }
 
+/* Slider */
+
+
 .slider img {
         width: 100%;
         height: auto;
@@ -325,7 +321,9 @@ ul {
                margin-top: 40px;
         }
         form {max-width: 80%;}
-        /*.listaCont {width: 80%;}*/
+        h1 {font-size: 1.30rem;}
+        .espacioHeader {padding: 55px 0 40px 0}
+        
     }
 
 @media (max-width:884px){
