@@ -322,8 +322,8 @@ ul {
         }
         form {max-width: 80%;}
         h1 {font-size: 1.30rem; padding: 50px 0 25px 0;}
-        .espacioHeader {padding: 55px 0 40px 0}
-        
+        .texto-principal {font-size: 1rem; max-width: 90%;}
+        .espacioHeader {padding: 55px 0 40px 0}  
     }
 
 @media (max-width:884px){
