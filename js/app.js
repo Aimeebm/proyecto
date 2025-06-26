@@ -30,7 +30,8 @@
 
     // Slider
   
-    // Después moveré este código al index porque ahí está el slider.
+    // Después moveré este código al index porque ahí está el slider
+    // y aparece un error en las otras páginas.
 
   
   const imagenes = ["assets/img/foto1.jpg", "assets/img/foto2.jpg",];
